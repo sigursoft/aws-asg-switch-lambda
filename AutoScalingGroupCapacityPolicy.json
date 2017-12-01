@@ -1,0 +1,55 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AllowCapacityUpdateStatement",
+            "Effect": "Allow",
+            "Action": [
+                "autoscaling:SetDesiredCapacity",
+                "autoscaling:DetachLoadBalancerTargetGroups",
+                "autoscaling:UpdateAutoScalingGroup",
+                "autoscaling:AttachLoadBalancerTargetGroups"
+            ],
+            "Resource": [
+                "<provide all Auto Scaling Groups Here 1>",
+                "<provide all Auto Scaling Groups Here 2>"
+            ]
+        },
+        {
+            "Sid": "DescribeLoadBalancerTargetGroupsPermission",
+            "Effect": "Allow",
+            "Action": "autoscaling:DescribeLoadBalancerTargetGroups",
+            "Resource": "*"
+        }
+        {
+            "Sid": "Stmt1506948300000",
+            "Effect": "Allow",
+            "Action": [
+                "cloudwatch:PutMetricData"
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+        	"Sid": "Stmt1506948300001",
+            "Effect": "Allow",
+            "Action": [
+                "logs:CreateLogStream"
+            ],
+            "Resource": [
+                "arn:aws:logs:eu-central-1:632826021673:log-group:/aws/lambda/<Lambda_Name>:*"
+            ]
+        },
+        {
+            "Sid": "Stmt1506948300201",
+            "Effect": "Allow",
+            "Action": [
+                "logs:PutLogEvents"
+            ],
+            "Resource": [
+                "arn:aws:logs:eu-central-1:632826021673:log-group:/aws/lambda/<Lambda_Name>:*:*"
+            ]
+        }
+    ]
+}

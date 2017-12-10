@@ -32,13 +32,13 @@
             ]
         },
         {
-        	"Sid": "Stmt1506948300001",
+            "Sid": "Stmt1506948300001",
             "Effect": "Allow",
             "Action": [
                 "logs:CreateLogStream"
             ],
             "Resource": [
-                "arn:aws:logs:eu-central-1:632826021673:log-group:/aws/lambda/<Lambda_Name>:*"
+                "arn:aws:logs:<region>:<account-id>:log-group:/aws/lambda/<Lambda_Name>:*"
             ]
         },
         {
@@ -48,7 +48,7 @@
                 "logs:PutLogEvents"
             ],
             "Resource": [
-                "arn:aws:logs:eu-central-1:632826021673:log-group:/aws/lambda/<Lambda_Name>:*:*"
+                "arn:aws:logs:<region>:<account-id>:log-group:/aws/lambda/<Lambda_Name>:*:*"
             ]
         }
     ]

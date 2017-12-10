@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.sigursoft.lambda</groupId>
-  <artifactId>green-blue-deployment-lambda</artifactId>
+  <artifactId>aws-asg-switch-lambda</artifactId>
   <version>0.1</version>
   <packaging>jar</packaging>
 

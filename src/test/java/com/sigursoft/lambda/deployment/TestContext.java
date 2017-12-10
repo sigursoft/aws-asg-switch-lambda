@@ -1,4 +1,4 @@
-package com.tacton.lambda.deployment;
+package com.sigursoft.lambda.deployment;
 
 import com.amazonaws.services.lambda.runtime.ClientContext;
 import com.amazonaws.services.lambda.runtime.CognitoIdentity;

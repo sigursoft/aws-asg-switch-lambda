@@ -1,4 +1,4 @@
-package com.tacton.lambda.deployment;
+package com.sigursoft.lambda.deployment;
 
 import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.services.lambda.runtime.RequestHandler;

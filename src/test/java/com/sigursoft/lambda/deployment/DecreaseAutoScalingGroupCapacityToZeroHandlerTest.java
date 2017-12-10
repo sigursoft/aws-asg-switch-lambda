@@ -1,4 +1,4 @@
-package com.tacton.lambda.deployment;
+package com.sigursoft.lambda.deployment;
 
 import java.io.IOException;
 

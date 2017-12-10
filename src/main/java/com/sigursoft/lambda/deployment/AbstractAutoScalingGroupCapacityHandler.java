@@ -1,4 +1,4 @@
-package com.tacton.lambda.deployment;
+package com.sigursoft.lambda.deployment;
 
 import com.amazonaws.auth.DefaultAWSCredentialsProviderChain;
 import com.amazonaws.services.autoscaling.AmazonAutoScaling;
